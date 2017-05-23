@@ -1,7 +1,7 @@
 # Symfony2-PUSH-FCM
 Server-side PUSH notifications using Firebase (FCM), implemented in Symfony2 with a POST request
 
-In this repository, i will teach how implement PUSH notifications in a Symfony2's project
+In this repository, I will teach how implement PUSH notifications in a Symfony2's project
 
 ### Steps:
 
@@ -13,9 +13,9 @@ In this repository, i will teach how implement PUSH notifications in a Symfony2'
 
 ## Create a new Bundle
 
-To create a new bundle you only have yo run the next command in your project's folde:
+To create a new bundle you only have yo run the next command in your project's folder:
 
-php app/console generate:bundle
+`php app/console generate:bundle`
 
 and ask some questions.
 
@@ -46,7 +46,7 @@ Now, we have created a bundle.
 
 ## Create a Entity that store the tokens of your users
 
-You must store the tokens of your user in the database, probably do you have one but i will create 1 of example, if  you have done your database schema ignore this step.
+You must store the tokens of your user in the database, probably do you have one but I will create 1 of example, if  you have done your database schema ignore this step.
 
 In this example we will create  a new Entity called Devices
 
@@ -142,7 +142,7 @@ class Device {
 
 now we must update the doctrine schema with this command from our project's folder:
 
-php app/console doctrine:schema:update --force
+`php app/console doctrine:schema:update --force`
 
 Now, our class is ready to store tokens of our users's devices
 
@@ -253,5 +253,5 @@ push_notifications_send:
 ```
 
 Now our web aplication can send push messages with Firebase
-Thanks for read, if you see and error or anything , tell me and i correct or improve.
-I expect that this tutorial can help you
+Thanks for read, if you see and error or anything , tell me and I correct or improve.
+I expect that this tutorial can help you.
